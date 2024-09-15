@@ -1,0 +1,1251 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Amazon_Clone</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="utility.css">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+        integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+        rel="stylesheet">
+
+</head>
+
+<body>
+    <div class="container" id="container">
+        <header class="head" id="navbar_main">
+            <nav class="navbar_upper" id="navbar_upper">
+                <div class="nav_left">
+                    <img class="border" src="Image/logo.jpeg" alt="logo">
+                    <div class="location border">
+                        <i class="fa-solid fa-location-dot"></i>
+                        <div class="inner_location">
+                            <h4>Deliver To</h4>
+                            <h3>Bangladesh</h3>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="nav_fill">
+                    <div class="nav_search">
+                        <select id="all" name="all">
+                            <option value="All" selected>All</option>
+                            <option value="all_dept">All Depertment</option>
+                            <option value="art">Art & Craft</option>
+                            <option value="automotive">Automotive</option>
+                            <option value="baby">Baby</option>
+                            <option value="beauty">Beauty & Personal Care</option>
+                            <option value="books">Books</option>
+                            <option value="boys">Boys' Fashion</option>
+                            <option value="computers">Computers</option>
+                            <option value="deals">Deals</option>
+                            <option value="music">Digital Music</option>
+                            <option value="electronics">Electronics</option>
+                            <option value="girls">Girls' Fashion</option>
+                            <option value="health">Health & Household</option>
+                            <option value="home">Home & Kitchen</option>
+                            <option value="industrial">Industrial & Scientific</option>
+                            <option value="kindle">Kindle Store</option>
+                            <option value="mans">Mans' Fashion</option>
+                            <option value="tv">Movie & TV</option>
+                            <option value="software">Software</option>
+                        </select>
+
+                        <input type="search" class="search" id="search_box" placeholder="Search Amazon">
+                        <span>
+                            <i class="fa-solid fa-magnifying-glass"></i>
+                        </span>
+                    </div>
+                </div>
+
+                <div class="nav_right">
+                    <div class="language border">
+
+                        <div class="selected">
+                            <img src="https://flagcdn.com/w20/gb.png" alt="English flag">
+                            EN
+                        </div>
+
+                        <div class="options">
+                            <div>
+                                <img src="https://flagcdn.com/w20/es.png" alt="Spanish flag">
+                                Spanish
+                            </div>
+                            <div>
+                                <img src="https://flagcdn.com/w20/fr.png" alt="French flag">
+                                French
+                            </div>
+                            <div>
+                                <img src="https://flagcdn.com/w20/bd.png" alt="Bangladesh flag">
+                                Bengali
+                            </div>
+                            <div>
+                                <img src="https://flagcdn.com/w20/de.png" alt="German flag">
+                                German
+                            </div>
+                            <div>
+                                <img src="https://flagcdn.com/w20/cn.png" alt="Chinese flag">
+                                Chinese
+                            </div>
+                            <div>
+                                <img src="https://flagcdn.com/w20/jp.png" alt="Japanese flag">
+                                Japanese
+                            </div>
+                            <div>
+                                <img src="https://flagcdn.com/w20/kr.png" alt="Korean flag">
+                                Korean
+                            </div>
+                            <div>
+                                <img src="https://flagcdn.com/w20/ru.png" alt="Russian flag">
+                                Russian
+                            </div>
+                            <div>
+                                <img src="https://flagcdn.com/w20/sa.png" alt="Arabic flag">
+                                Arabic
+                            </div>
+                            <div>
+                                <img src="https://flagcdn.com/w20/br.png" alt="Portuguese flag">
+                                Portuguese
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="singin border ">
+                        <h4>Hello, sing in</h4>
+                        <h2>Account & Lists</h2>
+                    </div>
+
+                    <div class="order border">
+                        <h4>Return</h4>
+                        <h2>& Order</h2>
+                    </div>
+
+                    <div class="cart border">
+                        <i class="fa-solid fa-cart-shopping"></i>
+                        <h2>Cart</h2>
+                    </div>
+                </div>
+            </nav>
+            <nav class="navbar_lower " id="navbar_lower">
+                <div class="all border">
+                    <i class="fa-solid fa-bars"></i>
+                    ALL
+                </div>
+                <h3 class="border">Today's Deal</h3>
+                <h3 class="border">Customer Serviece</h3>
+                <h3 class="border">Registry</h3>
+                <h3 class="border">Gift Card</h3>
+                <h3 class="border">Sell</h3>
+
+            </nav>
+        </header>
+
+
+        <section class="all_section">
+
+            <section class="background_banner">
+                <div class="banners">
+                    <div class="banner z_index" id="banner1">
+                    </div>
+                    <div class="banner z_index" id="banner2">
+                    </div>
+                    <div class="banner z_index" id="banner3">
+                    </div>
+                    <div class="banner z_index" id="banner4">
+                    </div>
+                    <div class="banner z_index" id="banner5">
+                    </div>
+                </div>
+            </section>
+
+
+
+            <section class="second">
+                <div class="all_card">
+                    <div class="card">
+                        <h2>Gaming accessories</h2>
+                        <div class="card_item">
+                            <div class="item">
+                                <img src="Image/gaming1.jpg" alt="Headset">
+                                <h3>Headset</h3>
+                            </div>
+                            <div class="item">
+                                <img src="Image/gaming2.jpg" alt="Keyboard">
+                                <h3>Keyboard</h3>
+                            </div>
+                            <div class="item">
+                                <img src="Image/gaming3.jpg" alt="Mouse">
+                                <h3>Mouse</h3>
+                            </div>
+                            <div class="item">
+                                <img src="Image/gaming4.jpg" alt="Chair">
+                                <h3>Chairs</h3>
+                            </div>
+
+                        </div>
+                        <button class="more">See more</button>
+                    </div>
+
+                    <div class="card">
+                        <h2>New home arrivals under $50</h2>
+                        <div class="card_item">
+                            <div class="item">
+                                <img src="Image/home1.jpg" alt="home">
+                                <h3>Kitchen & dining</h3>
+                            </div>
+                            <div class="item">
+                                <img src="Image/home2.jpg" alt="home">
+                                <h3>Home Improvement</h3>
+                            </div>
+                            <div class="item">
+                                <img src="Image/home3.jpg" alt="home">
+                                <h3>Decor</h3>
+                            </div>
+                            <div class="item">
+                                <img src="Image/home4.jpg" alt="home">
+                                <h3>Bedding & bath</h3>
+                            </div>
+
+                        </div>
+                        <button class="more">Shop the leatest from home</button>
+                    </div>
+
+                    <div class="card">
+                        <h2>Shop deals in Fashion</h2>
+                        <div class="card_item">
+                            <div class="item">
+                                <img src="Image/fashion1.jpg" alt="Headset">
+                                <h3>Jeans under $50</h3>
+                            </div>
+                            <div class="item">
+                                <img src="Image/fashion2.jpg" alt="Keyboard">
+                                <h3>Tops under $25</h3>
+                            </div>
+                            <div class="item">
+                                <img src="Image/fashion3.jpg" alt="Mouse">
+                                <h3>Dresses under $30</h3>
+                            </div>
+                            <div class="item">
+                                <img src="Image/fashion4.jpg" alt="Chair">
+                                <h3>Shoes under $50</h3>
+                            </div>
+
+                        </div>
+                        <button class="more">See all deals</button>
+                    </div>
+
+                    <div class="card">
+                        <h2>Refresh your space</h2>
+                        <div class="card_item">
+                            <div class="item">
+                                <img src="Image/refresh1.jpg" alt="Headset">
+                                <h3>Dining</h3>
+                            </div>
+                            <div class="item">
+                                <img src="Image/refresh2.jpg" alt="Keyboard">
+                                <h3>Home</h3>
+                            </div>
+                            <div class="item">
+                                <img src="Image/refresh3.jpg" alt="Mouse">
+                                <h3>Kitchen</h3>
+                            </div>
+                            <div class="item">
+                                <img src="Image/refresh4.jpg" alt="Chair">
+                                <h3>Health and Beauty</h3>
+                            </div>
+
+                        </div>
+                        <button class="more">See more</button>
+                    </div>
+
+                    <div class="card">
+                        <h2>Toys under $25</h2>
+                        <div class="card_item">
+                            <img class="item-3" src="Image/toy.jpg" alt="image">
+                        </div>
+                        <button class="more">Shop now</button>
+                    </div>
+
+                    <div class="card">
+                        <h2>Beauty steals under $25</h2>
+                        <div class="card_item">
+                            <img class="item-3" src="Image/beauty.jpg" alt="image">
+                        </div>
+                        <button class="more">Shop now</button>
+                    </div>
+
+                    <div class="card">
+                        <h2>Get your game on</h2>
+                        <div class="card_item">
+                            <img class="item-3" src="Image/pc.jpg" alt="">
+                        </div>
+                        <button class="more">Shop gaming</button>
+                    </div>
+
+
+                    <div class="card">
+                        <h2>Fashion trends you like</h2>
+                        <div class="card_item">
+                            <div class="item">
+                                <img src="Image/trend1.jpg" alt="Headset">
+                                <h3>Dresses</h3>
+                            </div>
+                            <div class="item">
+                                <img src="Image/trend2.jpg" alt="Keyboard">
+                                <h3>Knits</h3>
+                            </div>
+                            <div class="item">
+                                <img src="Image/trend3.jpg" alt="Mouse">
+                                <h3>Jackets</h3>
+                            </div>
+                            <div class="item">
+                                <img src="Image/trend4.jpg" alt="Chair">
+                                <h3>Jewelry</h3>
+                            </div>
+
+                        </div>
+                        <button class="more">Explore more</button>
+                    </div>
+
+                </div>
+
+            </section>
+
+
+
+            <section class="third">
+                <div class="third_heading">
+                    <h2>Top picks for Bangladesh</h2>
+                </div>
+                <div class="left_arrow">
+                    <i class="fa-solid fa-chevron-left"></i>
+                </div>
+
+                <div class="third_item">
+                    <div class="third_img">
+                        <img src="Image/top_pics1.jpg" alt="image">
+                    </div>
+
+                    <div class="third_img">
+                        <img src="Image/top_pics2.jpg" alt="image">
+                    </div>
+
+                    <div class="third_img">
+                        <img src="Image/top_pics3.jpg" alt="image">
+                    </div>
+
+                    <div class="third_img">
+                        <img src="Image/top_pics4.jpg" alt="image">
+                    </div>
+
+                    <div class="third_img">
+                        <img src="Image/top_pics5.jpg" alt="image">
+                    </div>
+
+                    <div class="third_img">
+                        <img src="Image/top_pics6.jpg" alt="image">
+                    </div>
+
+                    <div class="third_img">
+                        <img src="Image/top_pics7.jpg" alt="image">
+                    </div>
+
+                    <div class="third_img">
+                        <img src="Image/top_pics8.jpg" alt="image">
+                    </div>
+
+                    <div class="third_img">
+                        <img src="Image/top_pics9.jpg" alt="image">
+                    </div>
+
+                    <div class="third_img">
+                        <img src="Image/top_pics10.jpg" alt="image">
+                    </div>
+
+                    <div class="third_img">
+                        <img src="Image/top_pics11.jpg" alt="image">
+                    </div>
+
+                    <div class="third_img">
+                        <img src="Image/top_pics12.jpg" alt="image">
+                    </div>
+
+                    <div class="third_img">
+                        <img src="Image/top_pics13.jpg" alt="image">
+                    </div>
+
+                    <div class="third_img">
+                        <img src="Image/top_pics14.jpg" alt="image">
+                    </div>
+
+                    <div class="third_img">
+                        <img src="Image/top_pics15.jpg" alt="image">
+                    </div>
+
+                    <div class="third_img">
+                        <img src="Image/top_pics16.jpg" alt="image">
+                    </div>
+
+                    <div class="third_img">
+                        <img src="Image/top_pics17.jpg" alt="image">
+                    </div>
+
+                    <div class="third_img">
+                        <img src="Image/top_pics18.jpg" alt="image">
+                    </div>
+
+                    <div class="third_img">
+                        <img src="Image/top_pics19.jpg" alt="image">
+                    </div>
+
+                    <div class="third_img">
+                        <img src="Image/top_pics20.jpg" alt="image">
+                    </div>
+
+                </div>
+
+                <div class="right_arrow">
+                    <i class="fa-solid fa-chevron-right"></i>
+                </div>
+            </section>
+
+            <section class="fourth">
+                <div class="fourth_heading">
+                    <h2>Top picks for Bangladesh</h2>
+                </div>
+                <div class="left_arrow">
+                    <i class="fa-solid fa-chevron-left"></i>
+                </div>
+
+                <div class="fourth_item">
+                    <div class="fourth_img">
+                        <img src="Image/kitchen1.jpg" alt="image">
+                    </div>
+
+                    <div class="fourth_img">
+                        <img src="Image/kitchen2.jpg" alt="image">
+                    </div>
+
+                    <div class="fourth_img">
+                        <img src="Image/kitchen3.jpg" alt="image">
+                    </div>
+
+                    <div class="fourth_img">
+                        <img src="Image/kitchen4.jpg" alt="image">
+                    </div>
+
+                    <div class="fourth_img">
+                        <img src="Image/kitchen5.jpg" alt="image">
+                    </div>
+
+                    <div class="fourth_img">
+                        <img src="Image/kitchen6.jpg" alt="image">
+                    </div>
+
+                    <div class="fourth_img">
+                        <img src="Image/kitchen7.jpg" alt="image">
+                    </div>
+
+                    <div class="fourth_img">
+                        <img src="Image/kitchen8.jpg" alt="image">
+                    </div>
+
+                    <div class="fourth_img">
+                        <img src="Image/kitchen9.jpg" alt="image">
+                    </div>
+
+                    <div class="fourth_img">
+                        <img src="Image/kitchen10.jpg" alt="image">
+                    </div>
+
+                    <div class="fourth_img">
+                        <img src="Image/kitchen11.jpg" alt="image">
+                    </div>
+
+                    <div class="fourth_img">
+                        <img src="Image/kitchen12.jpg" alt="image">
+                    </div>
+                </div>
+
+                <div class="right_arrow">
+                    <i class="fa-solid fa-chevron-right"></i>
+                </div>
+            </section>
+
+
+            <section class="fifth">
+                <div class="fifth_card">
+                    <div class="card">
+                        <h2>Most-loved watches</h2>
+                        <div class="card_item">
+                            <div class="item">
+                                <img src="Image/watch1.jpg" alt="Headset">
+                                <h3>Women</h3>
+                            </div>
+                            <div class="item">
+                                <img src="Image/watch2.jpg" alt="Keyboard">
+                                <h3>Men</h3>
+                            </div>
+                            <div class="item">
+                                <img src="Image/watch3.jpg" alt="Mouse">
+                                <h3>Girls</h3>
+                            </div>
+                            <div class="item">
+                                <img src="Image/watch4.jpg" alt="Chair">
+                                <h3>Boys</h3>
+                            </div>
+                        </div>
+                        <button class="more">Discover more</button>
+                    </div>
+
+                    <div class="card">
+                        <h2>Most-loved travel essentials</h2>
+                        <div class="card_item">
+                            <div class="item">
+                                <img src="Image/travel1.jpg" alt="Headset">
+                                <h3>Backpacks</h3>
+                            </div>
+                            <div class="item">
+                                <img src="Image/travel2.jpg" alt="Keyboard">
+                                <h3>Suitcases</h3>
+                            </div>
+                            <div class="item">
+                                <img src="Image/travel3.jpg" alt="Mouse">
+                                <h3>Accessories</h3>
+                            </div>
+                            <div class="item">
+                                <img src="Image/travel4.jpg" alt="Chair">
+                                <h3>Handbags</h3>
+                            </div>
+                        </div>
+                        <button class="more">Discover more</button>
+                    </div>
+
+                    <div class="card">
+                        <h2>Most-loved for Back to School</h2>
+                        <div class="card_item">
+                            <div class="item">
+                                <img src="Image/school1.jpg" alt="Headset">
+                                <h3>School supplies</h3>
+                            </div>
+                            <div class="item">
+                                <img src="Image/school2.jpg" alt="Keyboard">
+                                <h3>School-ready styles</h3>
+                            </div>
+                            <div class="item">
+                                <img src="Image/school3.jpg" alt="Mouse">
+                                <h3>Electronics</h3>
+                            </div>
+                            <div class="item">
+                                <img src="Image/school4.jpg" alt="Chair">
+                                <h3>Personal Care</h3>
+                            </div>
+                        </div>
+                        <button class="more">Shop all</button>
+                    </div>
+
+                    <div class="card">
+                        <h2>Summer style update</h2>
+                        <div class="card_item">
+                            <div class="item">
+                                <img src="Image/summer1.jpg" alt="Headset">
+                                <h3>Dresses</h3>
+                            </div>
+                            <div class="item">
+                                <img src="Image/summer2.jpg" alt="Keyboard">
+                                <h3>Tops</h3>
+                            </div>
+                            <div class="item">
+                                <img src="Image/summer3.jpg" alt="Mouse">
+                                <h3>Shoes</h3>
+                            </div>
+                            <div class="item">
+                                <img src="Image/summer4.jpg" alt="Chair">
+                                <h3>Swimwear</h3>
+                            </div>
+                        </div>
+                        <button class="more">Shop now</button>
+                    </div>
+
+                </div>
+            </section>
+
+
+            <section class="sixth third">
+                <div class="sixth_heading third_heading">
+                    <h2>Best Sellers in Sports & Outdoors</h2>
+                </div>
+                <div class="left_arrow">
+                    <i class="fa-solid fa-chevron-left"></i>
+                </div>
+                <div class="sixth_item third_item">
+                    <div class="sixth_img third_img">
+                        <img src="Image/sports1.jpg" alt="image">
+                    </div>
+
+                    <div class="sixth_img third_img">
+                        <img src="Image/sports2.jpg" alt="image">
+                    </div>
+
+                    <div class="sixth_img third_img">
+                        <img src="Image/sports3.jpg" alt="image">
+                    </div>
+
+                    <div class="sixth_img third_img">
+                        <img src="Image/sports4.jpg" alt="image">
+                    </div>
+
+                    <div class="sixth_img third_img">
+                        <img src="Image/sports5.jpg" alt="image">
+                    </div>
+
+                    <div class="sixth_img third_img">
+                        <img src="Image/sports6.jpg" alt="image">
+                    </div>
+
+                    <div class="sixth_img third_img">
+                        <img src="Image/sports7.jpg" alt="image">
+                    </div>
+
+                    <div class="sixth_img third_img">
+                        <img src="Image/sports8.jpg" alt="image">
+                    </div>
+
+                    <div class="sixth_img third_img">
+                        <img src="Image/sports9.jpg" alt="image">
+                    </div>
+
+                    <div class="sixth_img third_img">
+                        <img src="Image/sports10.jpg" alt="image">
+                    </div>
+
+                    <div class="sixth_img third_img">
+                        <img src="Image/sports11.jpg" alt="image">
+                    </div>
+
+                    <div class="sixth_img third_img">
+                        <img src="Image/sports12.jpg" alt="image">
+                    </div>
+
+                    <div class="sixth_img third_img">
+                        <img src="Image/sports13.jpg" alt="image">
+                    </div>
+
+                    <div class="sixth_img third_img">
+                        <img src="Image/sports14.jpg" alt="image">
+                    </div>
+
+                    <div class="sixth_img third_img">
+                        <img src="Image/sports15.jpg" alt="image">
+                    </div>
+
+                    <div class="sixth_img third_img">
+                        <img src="Image/sports16.jpg" alt="image">
+                    </div>
+
+                    <div class="sixth_img third_img">
+                        <img src="Image/sports17.jpg" alt="image">
+                    </div>
+
+                    <div class="sixth_img third_img">
+                        <img src="Image/sports18.jpg" alt="image">
+                    </div>
+
+                </div>
+                <div class="right_arrow">
+                    <i class="fa-solid fa-chevron-right"></i>
+                </div>
+            </section>
+
+            <section class="seventh third">
+                <div class="seventh_heading third_heading">
+                    <h2>Top Sellers in Toys for you</h2>
+                </div>
+                <div class="left_arrow">
+                    <i class="fa-solid fa-chevron-left"></i>
+                </div>
+
+                <div class="seventh_item third_item">
+                    <div class="seventh_img third_img">
+                        <img src="Image/toy1.jpg" alt="image">
+                    </div>
+
+                    <div class="seventh_img third_img">
+                        <img src="Image/toy2.jpg" alt="image">
+                    </div>
+
+                    <div class="seventh_img third_img">
+                        <img src="Image/toy3.jpg" alt="image">
+                    </div>
+
+                    <div class="seventh_img third_img">
+                        <img src="Image/toy4.jpg" alt="image">
+                    </div>
+
+                    <div class="seventh_img third_img">
+                        <img src="Image/toy5.jpg" alt="image">
+                    </div>
+
+                    <div class="seventh_img third_img">
+                        <img src="Image/toy6.jpg" alt="image">
+                    </div>
+
+                    <div class="seventh_img third_img">
+                        <img src="Image/toy7.jpg" alt="image">
+                    </div>
+
+                    <div class="seventh_img third_img">
+                        <img src="Image/toy8.jpg" alt="image">
+                    </div>
+
+                    <div class="seventh_img third_img">
+                        <img src="Image/toy9.jpg" alt="image">
+                    </div>
+
+                    <div class="seventh_img third_img">
+                        <img src="Image/toy10.jpg" alt="image">
+                    </div>
+
+                    <div class="seventh_img third_img">
+                        <img src="Image/toy11.jpg" alt="image">
+                    </div>
+
+                    <div class="seventh_img third_img">
+                        <img src="Image/toy12.jpg" alt="image">
+                    </div>
+
+                    <div class="seventh_img third_img">
+                        <img src="Image/toy13.jpg" alt="image">
+                    </div>
+
+                    <div class="seventh_img third_img">
+                        <img src="Image/toy14.jpg" alt="image">
+                    </div>
+
+                    <div class="seventh_img third_img">
+                        <img src="Image/toy15.jpg" alt="image">
+                    </div>
+
+                    <div class="seventh_img third_img">
+                        <img src="Image/toy16.jpg" alt="image">
+                    </div>
+
+                    <div class="seventh_img third_img">
+                        <img src="Image/toy17.jpg" alt="image">
+                    </div>
+
+                    <div class="seventh_img third_img">
+                        <img src="Image/toy18.jpg" alt="image">
+                    </div>
+
+                    <div class="seventh_img third_img">
+                        <img src="Image/toy19.jpg" alt="image">
+                    </div>
+
+                    <div class="seventh_img third_img">
+                        <img src="Image/toy20.jpg" alt="image">
+                    </div>
+
+                    <div class="seventh_img third_img">
+                        <img src="Image/toy21.jpg" alt="image">
+                    </div>
+
+                    <div class="seventh_img third_img">
+                        <img src="Image/toy22.jpg" alt="image">
+                    </div>
+
+                </div>
+
+                <div class="right_arrow">
+                    <i class="fa-solid fa-chevron-right"></i>
+                </div>
+            </section>
+
+
+            <section class="eighth third">
+
+                <div class="eighth_heading third_heading">
+                    <h2>Top Sellers in Toys for you</h2>
+                </div>
+                <div class="left_arrow">
+                    <i class="fa-solid fa-chevron-left"></i>
+                </div>
+
+                <div class="eighth_item third_item">
+                    <div class="eighth_img third_img">
+                        <img src="Image/books1.jpg" alt="image">
+                    </div>
+
+                    <div class="eighth_img third_img">
+                        <img src="Image/books2.jpg" alt="image">
+                    </div>
+
+                    <div class="eighth_img third_img">
+                        <img src="Image/books3.jpg" alt="image">
+                    </div>
+
+                    <div class="eighth_img third_img">
+                        <img src="Image/books4.jpg" alt="image">
+                    </div>
+
+                    <div class="eighth_img third_img">
+                        <img src="Image/books5.jpg" alt="image">
+                    </div>
+
+                    <div class="eighth_img third_img">
+                        <img src="Image/books6.jpg" alt="image">
+                    </div>
+
+                    <div class="eighth_img third_img">
+                        <img src="Image/books7.jpg" alt="image">
+                    </div>
+
+                    <div class="eighth_img third_img">
+                        <img src="Image/books8.jpg" alt="image">
+                    </div>
+
+                    <div class="eighth_img third_img">
+                        <img src="Image/books9.jpg" alt="image">
+                    </div>
+
+                    <div class="eighth_img third_img">
+                        <img src="Image/books10.jpg" alt="image">
+                    </div>
+
+                    <div class="eighth_img third_img">
+                        <img src="Image/books11.jpg" alt="image">
+                    </div>
+
+                    <div class="eighth_img third_img">
+                        <img src="Image/books12.jpg" alt="image">
+                    </div>
+
+                    <div class="eighth_img third_img">
+                        <img src="Image/books13.jpg" alt="image">
+                    </div>
+
+                    <div class="eighth_img third_img">
+                        <img src="Image/books14.jpg" alt="image">
+                    </div>
+
+                    <div class="eighth_img third_img">
+                        <img src="Image/books15.jpg" alt="image">
+                    </div>
+
+                    <div class="eighth_img third_img">
+                        <img src="Image/books16.jpg" alt="image">
+                    </div>
+
+                    <div class="eighth_img third_img">
+                        <img src="Image/books17.jpg" alt="image">
+                    </div>
+
+                    <div class="eighth_img third_img">
+                        <img src="Image/books18.jpg" alt="image">
+                    </div>
+
+                    <div class="eighth_img third_img">
+                        <img src="Image/books19.jpg" alt="image">
+                    </div>
+
+                    <div class="eighth_img third_img">
+                        <img src="Image/books20.jpg" alt="image">
+                    </div>
+
+                    <div class="eighth_img third_img">
+                        <img src="Image/books21.jpg" alt="image">
+                    </div>
+
+                    <div class="eighth_img third_img">
+                        <img src="Image/books22.jpg" alt="image">
+                    </div>
+
+                    <div class="eighth_img third_img">
+                        <img src="Image/books23.jpg" alt="image">
+                    </div>
+
+                    <div class="eighth_img third_img">
+                        <img src="Image/books24.jpg" alt="image">
+                    </div>
+
+                    <div class="eighth_img third_img">
+                        <img src="Image/books25.jpg" alt="image">
+                    </div>
+
+                </div>
+
+                <div class="right_arrow">
+                    <i class="fa-solid fa-chevron-right"></i>
+                </div>
+            </section>
+
+            <section class="ninth second">
+                <div class="ninth_card all_card">
+                    <div class="card">
+                        <h2>Shop activity trackers and smartwatches</h2>
+                        <div class="card_item card_item1">
+                            <div class="item">
+                                <img class="smart_watch" src="Image/smart_watch.jpg" alt="image">
+                            </div>
+                        </div>
+                        <button class="more">Shop now</button>
+                    </div>
+
+                    <div class="card">
+                        <h2>Wireless Tech</h2>
+                        <div class="card_item">
+                            <div class="item">
+                                <img src="Image/wairless1.jpg" alt="Headset">
+                                <h3>Smartphones</h3>
+                            </div>
+                            <div class="item">
+                                <img src="Image/wairless2.jpg" alt="Keyboard">
+                                <h3>Watches</h3>
+                            </div>
+                            <div class="item">
+                                <img src="Image/wairless3.jpg" alt="Mouse">
+                                <h3>Headphones</h3>
+                            </div>
+                            <div class="item">
+                                <img src="Image/wairless4.jpg" alt="Chair">
+                                <h3>Tablets</h3>
+                            </div>
+                        </div>
+                        <button class="more">Discover more</button>
+                    </div>
+
+                    <div class="card">
+                        <h2>Curate your space</h2>
+                        <div class="card_item">
+                            <div class="item">
+                                <img src="Image/curate1.jpg" alt="Headset">
+                                <h3>Candles</h3>
+                            </div>
+                            <div class="item">
+                                <img src="Image/curate2.jpg" alt="Keyboard">
+                                <h3>Stylish pillows</h3>
+                            </div>
+                            <div class="item">
+                                <img src="Image/curate3.jpg" alt="Mouse">
+                                <h3>Indoor gardening</h3>
+                            </div>
+                            <div class="item">
+                                <img src="Image/curate4.jpg" alt="Chair">
+                                <h3>Storage and organization</h3>
+                            </div>
+                        </div>
+                        <button class="more">See more</button>
+                    </div>
+
+                    <div class="card">
+                        <h2>Look your best this season</h2>
+                        <div class="card_item">
+                            <div class="item">
+                                <img src="Image/look1.jpg" alt="Headset">
+                                <h3>For Her</h3>
+                            </div>
+                            <div class="item">
+                                <img src="Image/look2.jpg" alt="Keyboard">
+                                <h3>For Him</h3>
+                            </div>
+                            <div class="item">
+                                <img src="Image/look3.jpg" alt="Mouse">
+                                <h3>For Teens</h3>
+                            </div>
+                            <div class="item">
+                                <img src="Image/look4.jpg" alt="Chair">
+                                <h3>For Kids</h3>
+                            </div>
+                        </div>
+                        <button class="more">See more</button>
+                    </div>
+                </div>
+            </section>
+
+            <section class="tenth third">
+                <div class="tenth_heading third_heading">
+                    <h2>Most wished for in Video Games</h2>
+                </div>
+                <div class="left_arrow">
+                    <i class="fa-solid fa-chevron-left"></i>
+                </div>
+
+                <div class="tenth_item third_item">
+                    <div class="tenth_img third_img">
+                        <img src="Image/games1.jpg" alt="image">
+                    </div>
+
+                    <div class="tenth_img third_img">
+                        <img src="Image/games2.jpg" alt="image">
+                    </div>
+
+                    <div class="tenth_img third_img">
+                        <img src="Image/games3.jpg" alt="image">
+                    </div>
+
+                    <div class="tenth_img third_img">
+                        <img src="Image/games4.jpg" alt="image">
+                    </div>
+
+                    <div class="tenth_img third_img">
+                        <img src="Image/games5.jpg" alt="image">
+                    </div>
+
+                    <div class="tenth_img third_img">
+                        <img src="Image/games6.jpg" alt="image">
+                    </div>
+
+                    <div class="tenth_img third_img">
+                        <img src="Image/games7.jpg" alt="image">
+                    </div>
+
+                    <div class="tenth_img third_img">
+                        <img src="Image/games8.jpg" alt="image">
+                    </div>
+
+                    <div class="tenth_img third_img">
+                        <img src="Image/games9.jpg" alt="image">
+                    </div>
+
+                    <div class="tenth_img third_img">
+                        <img src="Image/games10.jpg" alt="image">
+                    </div>
+
+                    <div class="tenth_img third_img">
+                        <img src="Image/games11.jpg" alt="image">
+                    </div>
+
+                    <div class="tenth_img third_img">
+                        <img src="Image/games12.jpg" alt="image">
+                    </div>
+
+                    <div class="tenth_img third_img">
+                        <img src="Image/games13.jpg" alt="image">
+                    </div>
+
+                </div>
+
+                <div class="right_arrow">
+                    <i class="fa-solid fa-chevron-right"></i>
+                </div>
+            </section>
+
+        </section>
+
+        <hr>
+
+
+        <div class="ref">
+            <p>See personalized recommendations</p>
+            <button class="singin">Sing in</button>
+            <h5>New Customer?<a
+                    href="https://www.amazon.com/ap/register?openid.mode=checkid_setup&openid.ns=http%3A%2F%2Fspecs.openid.net%2Fauth%2F2.0&openid.return_to=https%3A%2F%2Fwww.amazon.com%2Fref%3Drhf_sign_in&openid.assoc_handle=usflex">Start
+                    here</a></h5>
+        </div>
+
+
+        <footer class="foot">
+            <div class="back">
+                <a href="#container">Back to top</a>
+
+            </div>
+
+            <div class="foot_top">
+                <div class="foot_top_list">
+                    <ul class="foot_list">
+                        <li class="list_item1 item_head">Get to know Us</li>
+                        <li class="list_item1">Careers</li>
+                        <li class="list_item1">Blogs</li>
+                        <li class="list_item1">About Amazon</li>
+                        <li class="list_item1">Investor Relations</li>
+                        <li class="list_item1">Amazon Devices</li>
+                        <li class="list_item1">Amazon Science</li>
+                    </ul>
+                    <ul class="foot_list">
+                        <li class="list_item2 item_head">Make Money With Us</li>
+                        <li class="list_item2">Sell Product On Amazon</li>
+                        <li class="list_item2">Sell On Amazon Business</li>
+                        <li class="list_item2">Sell Apps On Amazon</li>
+                        <li class="list_item2">Become an Affiliate</li>
+                        <li class="list_item2">Advertise Your Products</li>
+                        <li class="list_item2">Self-Publish with Us</li>
+                        <li class="list_item2">Host An Amazon Hub</li>
+                        <li class="list_item2"> ›See More Make Money with Us </li>
+                    </ul>
+                    <ul class="foot_list">
+                        <li class="list_item3 item_head">Amazon Payment Product</li>
+                        <li class="list_item3">Amazon Business card</li>
+                        <li class="list_item3">Shop With Points</li>
+                        <li class="list_item3">Reload Your Balance</li>
+                        <li class="list_item3">Amazon Currency Converter</li>
+                    </ul>
+                    <ul class="foot_list">
+                        <li class="list_item4 item_head">Let Us Help You</li>
+                        <li class="list_item4">Amazon and COVID-19</li>
+                        <li class="list_item4">Your Account</li>
+                        <li class="list_item4">Your Orders</li>
+                        <li class="list_item4">Shipping Rates & Policies</li>
+                        <li class="list_item4">Returns & Replacements</li>
+                        <li class="list_item4">Manage Your Content and Devices</li>
+                        <li class="list_item4">Help</li>
+                    </ul>
+                </div>
+                <div class="foot_top_button">
+                    <img src="Image/logo.jpeg" alt="Logo">
+                    <button class="english">English</button>
+                    <button class="doller">$ USD- U.S. Doller</button>
+                    <button class="united">United States</button>
+                </div>
+
+            </div>
+
+
+            <div class="foot_down">
+                <div class="foot_down_list">
+                    <ul class="down_list">
+                        <li style="font-size: 13px;opacity: .8;">Amazon Music </li>
+                        <li> Stream millions of songs </li>
+                    </ul>
+                    <ul class="down_list">
+                        <li style="font-size: 13px;opacity: .8;">Amazon Ads</li>
+                        <li>Reach customers whereever they spend their time</li>
+                    </ul>
+                    <ul class="down_list">
+                        <li style="font-size: 13px;opacity: .8;">6pm</li>
+                        <li>Score deals on fashion brands</li>
+                    </ul>
+                    <ul class="down_list">
+                        <li style="font-size: 13px;opacity: .8;">AbeBooks</li>
+                        <li>Books, art & collectibles</li>
+                    </ul>
+                    <ul class="down_list">
+                        <li style="font-size: 13px;opacity: .8;">ACX</li>
+                        <li>Audiobook Publishing Made Easy</li>
+                    </ul>
+                    <ul class="down_list">
+                        <li style="font-size: 13px;opacity: .8;">Sell on Amazon</li>
+                        <li>Start a Selling Account</li>
+                    </ul>
+                    <ul class="down_list">
+                        <li style="font-size: 13px;opacity: .8;">Veeqo</li>
+                        <li>Shipping Software Inventory Management</li>
+                    </ul>
+                    <ul class="down_list">
+                        <li style="font-size: 13px;opacity: .8;">Amazon Business</li>
+                        <li>Everything For Your Business</li>
+                    </ul>
+                    <ul class="down_list">
+                        <li style="font-size: 13px;opacity: .8;">Amazon Global</li>
+                        <li>Ship Orders Internationally</li>
+                    </ul>
+                    <ul class="down_list">
+                        <li style="font-size: 13px;opacity: .8;">Home Services</li>
+                        <li>Experienced Pros Happiness Guarantee</li>
+                    </ul>
+                    <ul class="down_list">
+                        <li style="font-size: 13px;opacity: .8;">Amazon Web Services</li>
+                        <li>Scalable Cloud Computing Services</li>
+                    </ul>
+                    <ul class="down_list">
+                        <li style="font-size: 13px;opacity: .8;">Audible</li>
+                        <li>Listen to Books & Original Audio Performances </li>
+                    </ul>
+                    <ul class="down_list">
+                        <li style="font-size: 13px;opacity: .8;">Box Office Mojo</li>
+                        <li>Find Movie Box Office Data</li>
+                    </ul>
+                    <ul class="down_list">
+                        <li style="font-size: 13px;opacity: .8;">Goodreads</li>
+                        <li>Book reviews & recommendations</li>
+                    </ul>
+                    <ul class="down_list">
+                        <li style="font-size: 13px;opacity: .8;">IMDb</li>
+                        <li>Movies, TV & Celebrities</li>
+                    </ul>
+                    <ul class="down_list">
+                        <li style="font-size: 13px;opacity: .8;">IMDbPro</li>
+                        <li>Get Info Entertainment Professionals Need</li>
+                    </ul>
+                    <ul class="down_list">
+                        <li style="font-size: 13px;opacity: .8;">Kindle Direct Publishing</li>
+                        <li>Indie Digital & Print Publishing Made Easy </li>
+                    </ul>
+                    <ul class="down_list">
+                        <li style="font-size: 13px;opacity: .8;">Prime Video Direct</li>
+                        <li>Video Distribution Made Easy</li>
+                    </ul>
+                    <ul class="down_list">
+                        <li style="font-size: 13px;opacity: .8;">Shopbop</li>
+                        <li>Designer Fashion Brands</li>
+                    </ul>
+                    <ul class="down_list">
+                        <li style="font-size: 13px;opacity: .8;">Woot!</li>
+                        <li>Deals and Shenanigans </li>
+                    </ul>
+                    <ul class="down_list">
+                        <li style="font-size: 13px;opacity: .8;">Zappos</li>
+                        <li>Shoes & Clothing</li>
+                    </ul>
+                    <ul class="down_list">
+                        <li style="font-size: 13px;opacity: .8;">Ring</li>
+                        <li>Smart Home Security Systems </li>
+                    </ul>
+                    <ul class="down_list">
+                        <li style="font-size: 13px;opacity: .8;">eero WiFi</li>
+                        <li>Stream 4K Video in Every Room</li>
+                    </ul>
+                    <ul class="down_list">
+                        <li style="font-size: 13px;opacity: .8;">Blink</li>
+                        <li>Smart Security for Every Home </li>
+                    </ul>
+                    <ul class="down_list">
+                        <li style="font-size: 13px;opacity: .8;">Neighbors App</li>
+                        <li>Real-Time Crime & Safety Alerts</li>
+                    </ul>
+                    <ul class="down_list">
+                        <li style="font-size: 13px;opacity: .8;">Amazon Subscrioption Boxes</li>
+                        <li>Top subscription boxes - right to your door</li>
+                    </ul>
+                    <ul class="down_list">
+                        <li style="font-size: 13px;opacity: .8;">PillPack</li>
+                        <li>Pharmacy Simplified</li>
+                    </ul>
+                </div>
+
+
+                <div class="last">
+                    <div class="last_up">
+                        <a href="#">Conditions of Use</a>
+                        <a href="#">Privicy Notice</a>
+                        <a href="#">Consumer Health Data Privacy Disclosure</a>
+                        <a href="#">Your Ads Privacy Choices</a>
+                    </div>
+
+                    <div class="last_down">
+                        © 1996-2024, Amazon.com, Inc. or its affiliates
+                        <br>
+                        By Iahia
+                    </div>
+                </div>
+
+            </div>
+
+
+        </footer>
+
+    </div>
+
+
+    <script src="script.js"></script>
+</body>
+
+</html>

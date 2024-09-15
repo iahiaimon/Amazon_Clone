@@ -1,0 +1,15 @@
+
+
+.invert{
+    filter: invert(1);
+}
+
+.border:hover{
+    border: 1px solid white;
+    border-radius: 3px;
+}
+
+.z_index{
+    z-index: -1;
+    
+}

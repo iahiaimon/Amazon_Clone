@@ -1,0 +1,44 @@
+@media only screen and (min-width: 1430px) and (max-width:1500px) {
+
+    .container{
+        overflow: hidden;
+    }
+
+    .nav_search input {
+        width: 760px;
+    }
+
+    .nav_right {
+        position: relative;
+        right: 45px;
+    }
+
+    div.card {
+        width: 330px;
+    }
+
+    .card .card_item .item img {
+        width: 150px;
+    }
+
+    .card_item .item-3 {
+        width: 305px;
+    }
+
+}
+
+
+@media only screen and (min-width: 1200px) and (max-width:1429px){
+    .container{
+        overflow: hidden;
+    }
+
+    .nav_search input {
+        width: 550px;
+    }
+
+    .nav_right {
+        position: relative;
+        right: 45px;
+    }
+}
